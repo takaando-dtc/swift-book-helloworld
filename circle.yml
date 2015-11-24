@@ -9,9 +9,9 @@ general:
   - results.zip
 
 # Use latest version of xctool (required for Xcode7 compatibility, at time of writing)
-dependencies:
-  pre:
-    - brew upgrade xctool --HEAD
+#dependencies:
+#pre:
+# - brew upgrade xctool --HEAD
       #- sudo gem install cocoapods --pre
 
 # This test override is only needed because this is an iPad app. For an iPhone-only app this can be removed.
