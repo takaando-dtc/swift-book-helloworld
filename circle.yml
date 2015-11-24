@@ -1,7 +1,7 @@
 # Use most recent available version of Xcode for improved swift compatibility
 machine:
   xcode:
-    version: "7.1"
+    version: "7.0"
 
 # Archive screenshots
 general:
