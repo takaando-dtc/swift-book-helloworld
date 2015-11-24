@@ -31,6 +31,8 @@ class swift_book_helloworldUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        print("hello world")
+        XCTAssert(2 == 1 + 1, "stupid calculation")
     }
     
 }

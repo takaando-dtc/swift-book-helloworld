@@ -1,0 +1,34 @@
+# Use most recent available version of Xcode for improved swift compatibility
+machine:
+  xcode:
+    version: "7.1"
+
+# Archive screenshots
+general:
+  artifacts:
+  - results.zip
+
+# Use latest version of xctool (required for Xcode7 compatibility, at time of writing)
+dependencies:
+  pre:
+    - brew upgrade xctool --HEAD
+      #- sudo gem install cocoapods --pre
+
+# This test override is only needed because this is an iPad app. For an iPhone-only app this can be removed.
+test:
+  override:
+    - set -o pipefail &&
+      xcodebuild
+        CODE_SIGNING_REQUIRED=NO
+        CODE_SIGN_IDENTITY=
+        PROVISIONING_PROFILE=
+        -sdk iphonesimulator
+        -destination 'platform=iOS Simulator,name=iPad Air,OS=latest'
+        -project swift-book-helloworld.xcodeproj
+        -scheme UITests
+        -resultBundlePath $(pwd)/results
+        test |
+      tee $CIRCLE_ARTIFACTS/xcode_raw.log |
+      xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+  # post:
+  #   - zip -r results.zip results
