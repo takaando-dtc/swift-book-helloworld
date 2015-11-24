@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func tappedOK(sender: AnyObject) {
+        view.backgroundColor = UIColor.greenColor()
+    }
+    @IBAction func comeHome(segue: UIStoryboardSegue){
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +26,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func gotoTreePage(sender: AnyObject) {
+        let nextVC = self.storyboard?.instantiateViewControllerWithIdentifier("treePage")
+        nextVC?.modalTransitionStyle = .FlipHorizontal
+        presentViewController(nextVC!, animated: true, completion: nil)
+    }
 
 }
 
