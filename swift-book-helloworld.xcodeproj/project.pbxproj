@@ -15,6 +15,7 @@
 		AA9EE7021BFEB55B001CE68C /* swift_book_helloworldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9EE7011BFEB55B001CE68C /* swift_book_helloworldTests.swift */; };
 		AA9EE70D1BFEB55B001CE68C /* swift_book_helloworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9EE70C1BFEB55B001CE68C /* swift_book_helloworldUITests.swift */; };
 		AA9EE71B1BFF1532001CE68C /* TreePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9EE71A1BFF1532001CE68C /* TreePageViewController.swift */; };
+		AA9EE71E1C06F7BF001CE68C /* swift-book-helloworld.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA9EE6E91BFEB55B001CE68C /* swift-book-helloworld.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,19 @@
 			remoteInfo = "swift-book-helloworld";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA9EE71D1C06F7A4001CE68C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				AA9EE71E1C06F7BF001CE68C /* swift-book-helloworld.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AA9EE6E91BFEB55B001CE68C /* swift-book-helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-book-helloworld.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +187,7 @@
 				AA9EE7041BFEB55B001CE68C /* Sources */,
 				AA9EE7051BFEB55B001CE68C /* Frameworks */,
 				AA9EE7061BFEB55B001CE68C /* Resources */,
+				AA9EE71D1C06F7A4001CE68C /* CopyFiles */,
 			);
 			buildRules = (
 			);
