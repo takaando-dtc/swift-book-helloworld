@@ -15,7 +15,7 @@
 		AA9EE7021BFEB55B001CE68C /* swift_book_helloworldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9EE7011BFEB55B001CE68C /* swift_book_helloworldTests.swift */; };
 		AA9EE70D1BFEB55B001CE68C /* swift_book_helloworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9EE70C1BFEB55B001CE68C /* swift_book_helloworldUITests.swift */; };
 		AA9EE71B1BFF1532001CE68C /* TreePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9EE71A1BFF1532001CE68C /* TreePageViewController.swift */; };
-		AA9EE71E1C06F7BF001CE68C /* swift-book-helloworld.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA9EE6E91BFEB55B001CE68C /* swift-book-helloworld.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA9EE71F1C06F92D001CE68C /* swift-book-helloworldUITests.xctest in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA9EE7081BFEB55B001CE68C /* swift-book-helloworldUITests.xctest */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				AA9EE71E1C06F7BF001CE68C /* swift-book-helloworld.app in CopyFiles */,
+				AA9EE71F1C06F92D001CE68C /* swift-book-helloworldUITests.xctest in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
