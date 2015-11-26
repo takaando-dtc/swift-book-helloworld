@@ -4,3 +4,4 @@ before_script:
 xcode_project: swift-book-helloworld.xcodeproj
 xcode_scheme: swift-book-helloworld
 xcode_sdk: iphonesimulator
+osx_image: xcode7.1
